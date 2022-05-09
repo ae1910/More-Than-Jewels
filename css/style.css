@@ -206,6 +206,9 @@ header .logo {
 	display: block;
 	margin-bottom: 37px;
 }
+.press {
+	display: flex;
+}
 .press .posts {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -411,18 +414,23 @@ hr {
 	gap: 45px 8px;
 	padding: 0 28px;
 	margin-bottom: 50px;
+	
 }
-.post1 {
+.new-post {
 	grid-area: 1 / 1 / 3 / auto;
 	text-decoration: none;
 	text-align: center;
 }
-.post1 div {
+.post {
+	text-decoration: none;
+	text-align: center;
+}
+.post div {
 	width: 100%;
 	padding-bottom: 100%;
 	position: relative;
 }
-.post1 img {
+.post img {
 	width: 100%;
 	object-fit: cover;
 	position: absolute;
@@ -430,7 +438,7 @@ hr {
 	top: 0;
 	left: 0;
 }
-.post1 h3 {
+.post h3 {
 	color: black;
 	position: relative;
 	font-size: 20px;
@@ -446,7 +454,7 @@ hr {
 	margin: auto;
 	max-width: 1920px;
 }
-.post1-meta {
+.post-meta {
 	max-width: 980px;
 	display: flex;
 	font-size: 14px;
@@ -465,14 +473,15 @@ hr {
 }
 .post1-image img {
 	width: 100%;
-	height: 100%;
+	max-height: 58vw;
+	object-fit: cover;
 }
 .post1-title {
 	text-align: center;
 	font-size: 32px;
 	letter-spacing: 2px;
 	line-height: 46px;
-	margin-bottom: 65px;
+	margin: auto 15px 65px 15px;
 }
 .post1-article {
 	max-width: 980px;
@@ -485,7 +494,7 @@ hr {
 	padding: 0 16px;
 }
 .post1-article h3 {
-	margin: 45px 0 20px;
+	margin: 25px 0 20px;
 	padding: 0;
 	font-weight: 800;
 	font-size: 25px;
@@ -500,10 +509,11 @@ hr {
 	flex-direction: column;
 	padding: 0 16px;
 	width: 100%;
+	padding-bottom: 20px;
 }
 .imgcaps img {
 	margin: auto auto 5px;
-	height: 130vw;
+	height: 130vautow;
 	max-height: 585px;
 	max-width: 430px;
 	width: 100%;
@@ -604,7 +614,8 @@ hr {
 		width: 50%;
 	}
 	.post1-title {
-		font-size: 3vw;
+		font-size: 2.5vw;
+		margin: auto 8px 25px 8px;
 	}
 }
 @media (max-width:767px) {
@@ -679,10 +690,10 @@ hr {
 		padding: 0 15px;
 		margin-bottom: 40px;
 	}
-	.post1 {
-		grid-area: 1 / 3;
+	.new-post {
+		grid-area: 1 / 1 / 1/ 3;
 	}
-	.post1 h3 {
+	.post h3 {
 		font-size: 14px;
 		line-height: 22px;
 		letter-spacing: 1px;
@@ -691,7 +702,7 @@ hr {
 	.details h1 {
 		font-size: 65px;
 	}
-	.post1-meta {
+	.post-meta {
 		max-width: 595px;
 		padding: 28px 0;
 		font-size: 12px;
